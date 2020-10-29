@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary: #5e7ce2;
+  --secondary: #ce643a;
+  --dark: #102542;
+  --light: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--dark);
+}
+
+header {
+  height: 4rem;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .bgSupport {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+i {
+  font-weight: 900;
+  height: 2rem;
+  width: 2rem;
+}
+
+header > nav {
+  padding: 0 4rem;
+}
+
+header > nav > a {
+  padding: 0 2rem;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+header > h5 {
+  padding: 0 4rem;
+}
+
+section {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 120px;
+  margin: 0;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--primary);
+}
+
+h6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--primary);
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+#one {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#one > div {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#one img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+button {
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 1rem 2rem;
+  color: var(--light);
+  font-size: 1rem;
+  box-shadow: -12px 10px 0px #102542;
+}
+
+#two {
+  display: flex;
+  min-height: 25vh;
+  max-width: 1440px;
+  margin: 10vh auto;
+}
+
+#two > div {
+  flex: 1;
+  background-color: var(--dark);
+  margin: 0 2rem;
+  padding: 1rem;
+  color: var(--light);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -12px 10px 0px var(--secondary);
+}
+
+#two > div > .bgSupport {
+  height: 8rem;
+  width: 8rem;
+  background-color: var(--light);
+  border-radius: 8rem;
+}
+
+#three img {
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: -1rem 1rem 0px var(--primary);
+}
+
+#three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: 10vh auto;
+}
+
+#three > div {
+  width: 100%;
+}
+
+#three > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12vh;
+}
+
+#three > div > div > div {
+  flex: 1;
+}
+
+#three > div > div > .bgSupport {
+  height: 50vh;
+  /* background-color: var(--primary); */
+}
+
+#four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 960px;
+  margin: 10vh auto;
+}
+
+#four > div {
+  display: flex;
+  width: 100%;
+}
+
+#four > div > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#four > div > div > .bgSupport {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 8rem;
+  background-color: var(--primary);
+}
+
+#five {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 960px;
+  margin: 10vh auto;
+}
+
+#five > div {
+  display: flex;
+  width: 100%;
+}
+
+#five > div > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#five > div > div > .bgSupport {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 8rem;
+  background-color: var(--primary);
+}
