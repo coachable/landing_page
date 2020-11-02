@@ -85,7 +85,7 @@ header {
     font-weight: normal;
     font-size: 19px;
     line-height: 30px;
-    color: var(--primary);
+    color: var(--light);
   }
 
   h6 {
@@ -205,12 +205,18 @@ header {
     margin: 10vh auto;
   }
 
+  #two img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
   #two > div {
     flex: 1;
-    background-color: var(--dark);
+    background-color: var(--light);
     margin: 2rem 0;
     padding: 1rem;
-    color: var(--light);
+    color: var(--dark);
     /* border-radius: 0.5rem; */
     display: flex;
     flex-direction: column;
@@ -218,13 +224,13 @@ header {
     align-items: center;
     width: 80%;
     max-width: 400px;
-    box-shadow: -12px 10px 0px var(--secondary);
+    border: 0.2rem solid var(--dark);
+    box-shadow: -12px 10px 0px var(--dark);
   }
 
   #two > div > .bgSupport {
     height: 8rem;
     width: 8rem;
-    background-color: var(--light);
     border-radius: 8rem;
   }
 
@@ -233,7 +239,7 @@ header {
     object-fit: cover;
     overflow: hidden;
     /* border-radius: 0.5rem; */
-    box-shadow: -1rem 1rem 0px var(--primary);
+    box-shadow: -1rem 1rem 0px var(--dark);
   }
 
   #three {
@@ -283,6 +289,12 @@ header {
     margin: 10vh auto;
   }
 
+  #four img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
   #four > div {
     display: flex;
     flex-direction: column;
@@ -311,7 +323,6 @@ header {
     height: 8rem;
     width: 8rem;
     border-radius: 8rem;
-    background-color: var(--primary);
   }
 
   #five {
@@ -341,7 +352,6 @@ header {
     height: 8rem;
     width: 8rem;
     border-radius: 8rem;
-    background-color: var(--primary);
   }
 }
 @media screen and (min-device-width: 813px) {
@@ -409,27 +419,34 @@ header {
     line-height: 36px;
   }
 
+  h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
   h5 {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 26px;
-    color: var(--primary);
+    line-height: 30px;
+    color: var(--light);
   }
 
   h6 {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 27px;
     color: var(--primary);
   }
 
   p {
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .modal {
@@ -529,29 +546,35 @@ header {
 
   #two > div {
     flex: 1;
-    background-color: var(--dark);
+    background-color: var(--light);
     margin: 0 2rem;
     padding: 1rem;
-    color: var(--light);
+    color: var(--dark);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: -12px 10px 0px var(--secondary);
+    border: 0.2rem solid var(--dark);
+    box-shadow: -12px 10px 0px var(--dark);
   }
 
   #two > div > .bgSupport {
     height: 8rem;
     width: 8rem;
-    background-color: var(--light);
     border-radius: 8rem;
+  }
+
+  #two img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   #three img {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
-    box-shadow: -1rem 1rem 0px var(--primary);
+    box-shadow: -1rem 1rem 0px var(--dark);
   }
 
   #three {
@@ -559,7 +582,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 10vh auto;
   }
 
@@ -577,6 +600,9 @@ header {
   #three > div > div > div {
     flex: 1;
     margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   #three > div > div > .bgSupport {
@@ -589,8 +615,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 960px;
-    margin: 10vh auto;
+    max-width: 1200px;
+    margin: 2vh auto;
   }
 
   #four h5 {
@@ -612,13 +638,20 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    /* box-shadow: -0.3rem 0.3rem 0px var(--secondary); */
   }
 
   #four > div > div > .bgSupport {
     height: 8rem;
     width: 8rem;
     border-radius: 8rem;
-    background-color: var(--primary);
+    margin-bottom: 2rem;
+  }
+
+  #four img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   #five {
@@ -626,8 +659,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 960px;
-    margin: 10vh auto;
+    max-width: 1200px;
+    margin: 2vh auto;
   }
 
   #five > div {
@@ -641,13 +674,6 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-
-  #five > div > div > .bgSupport {
-    height: 8rem;
-    width: 8rem;
-    border-radius: 8rem;
-    background-color: var(--primary);
   }
 }
 
