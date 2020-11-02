@@ -4,28 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-
     <title>Coachable - Launch your coding school</title>
     <script src="https://use.fontawesome.com/515bae6c63.js"></script>
   </head>
   <body>
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <h2 style="text-align: center; margin: 0">Join and Start Earning!</h2>
+        <form>
+          <div>
+            <p>Your Name :</p>
+            <input />
+          </div>
+          <div>
+            <p>Mobile Number :</p>
+            <input />
+          </div>
+          <div>
+            <p>Are you employed?</p>
+            <input type="range" />
+          </div>
+          <div>
+            <p>Experience in coding?</p>
+            <input />
+          </div>
+          <button id="submitBtn">Join Waitlist</button>
+        </form>
+      </div>
+    </div>
     <header>
       <h5>Coachable_</h5>
       <nav>
-        <a href="#">Team</a>
+        <a href="#">Home</a>
+        <!-- <a href="#">Team</a>
         <a href="">Careers</a>
         <a href="">Signup</a>
-        <a href="">Login</a>
+        <a href="">Login</a> -->
       </nav>
     </header>
     <section id="one">
-      <div>
+      <div id="oneone">
         <h1>Start your own coding school</h1>
         <h5>Train and start earning from your home</h5>
-        <button>Launch Now</button>
+        <button id="openModal" onclick="openModal()">Launch Now</button>
       </div>
-      <div>
-        <img src="./assets/hero_image.png" alt="" />
+      <div id="onetwo">
+        <img src="./assets/hero_image2.jpg" alt="" />
       </div>
     </section>
     <section id="two">
@@ -33,23 +57,23 @@
         <div class="bgSupport">
           <i class="fas fa-pencil-alt"></i>
         </div>
-        <h3>Train</h3>
+        <h3>Train with us</h3>
       </div>
       <div>
         <div class="bgSupport">
           <img src="" alt="" />
         </div>
-        <h3>Launch</h3>
+        <h3>Launch your school</h3>
       </div>
       <div>
         <div class="bgSupport">
           <img src="" alt="" />
         </div>
-        <h3>Earn</h3>
+        <h3>Teach & earn</h3>
       </div>
     </section>
     <section id="three">
-      <h6>BENEFITS</h6>
+      <h3>BENEFITS</h3>
       <div>
         <div>
           <div class="bgSupport">
@@ -73,7 +97,7 @@
             <p>
               - Learn from your laptop <br />
               - No upfront fee for your training <br />
-              - We earn when you earn <br />
+              - We only earn when you start earning <br />
             </p>
           </div>
         </div>
@@ -93,36 +117,40 @@
       </div>
     </section>
     <section id="four">
-      <h6>TRAINING</h6>
+      <h3>TRAINING</h3>
       <div>
         <div>
-          <div class="bgSupport">
+          <!-- <div class="bgSupport">
             <img src="" alt="" />
-          </div>
-          <h5>WEEK1</h5>
+          </div> -->
+          <h5>WEEK 1</h5>
           <h2>Coding</h2>
           <p>Coding...</p>
         </div>
         <div>
-          <div class="bgSupport">
+          <!-- <div class="bgSupport">
             <img src="" alt="" />
-          </div>
-          <h5>WEEK2</h5>
+          </div> -->
+          <h5>WEEK 2</h5>
           <h2>Sales</h2>
           <p>Coding...</p>
         </div>
         <div>
-          <div class="bgSupport">
+          <!-- <div class="bgSupport">
             <img src="" alt="" />
-          </div>
-          <h5>WEEK3</h5>
+          </div> -->
+          <h5>WEEK 3</h5>
           <h2>Entrepreneurship</h2>
           <p>Coding...</p>
         </div>
       </div>
     </section>
     <section id="five">
-      <h6>ARE YOU THE ONE?</h6>
+      <div class="headDiv" style="flex-direction: row; justify-content: center">
+        <hr class="lineDiv" />
+        <h3>ARE YOU THE ONE?</h3>
+        <hr class="lineDiv" />
+      </div>
       <div>
         <div>
           <div class="bgSupport">
@@ -150,5 +178,6 @@
     <footer>
       <h5>Coachable</h5>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
