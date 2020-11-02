@@ -22,13 +22,35 @@
           </div>
           <div>
             <p>Are you employed?</p>
-            <input type="range" />
+            <div>
+              <input
+                type="radio"
+                id="employed"
+                name="employment"
+                value="employed"
+              />
+              <label for="employed">Employed</label><br />
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="unemployed"
+                name="employment"
+                value="unemployed"
+              />
+              <label for="unemployed">Unemployed</label>
+            </div>
           </div>
-          <div>
-            <p>Experience in coding?</p>
-            <input />
-          </div>
-          <button id="submitBtn">Join Waitlist</button>
+          <!-- <div>
+            <label for="exp">Experience in coding?</label>
+            <select id="exp" name="exp">
+              <option value="zero">0 Years</option>
+              <option value="one">1 Year</option>
+              <option value="two">2 Years</option>
+              <option value="twoplus">2+ Years</option>
+            </select> 
+          </div> -->
+          <button id="submitBtn">Join Now</button>
         </form>
       </div>
     </div>
@@ -46,7 +68,7 @@
       <div id="oneone">
         <h1>Start your own coding school</h1>
         <h5>Train and start earning from your home</h5>
-        <button id="openModal" onclick="openModal()">Launch Now</button>
+        <button id="openModal" onclick="openModal()">Join Waitlist →</button>
       </div>
       <div id="onetwo">
         <img src="./assets/hero_image2.jpg" alt="" />
